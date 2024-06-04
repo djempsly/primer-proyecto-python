@@ -11,3 +11,5 @@ else:
     print('Lo siento, no tienes hijo aqui')
 
 print(list2)
+
+print(hijo[:2])
