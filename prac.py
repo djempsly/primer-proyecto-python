@@ -1,20 +1,19 @@
 
-jugador= input("Escribe: Piedra, Papel o Tijera ")
+import random
 
+jugador= input("Escribe: Piedra, Papel o Tijera ")
 jugador = jugador.lower()
 
-pc = "Piedra"
-pc = pc.lower()
+option = ('piedra', 'papel', 'tijera')
+pc = random.choice(option)
+
 
 if jugador == pc:
     print("Empate")
-elif jugador == "Papel"  and pc == pc:
-    print("Ganó Jugador")
-elif jugador == " Tijera " and pc == "Papel":
-    print("Ganó Jugador")
-else:
-    print ("Ganó la máquina")
-
+elif jugador == "Papel":
+    if pc == 'piedra':
+        print('Gana usuario')
+  
 
 
 
